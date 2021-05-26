@@ -33,7 +33,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         super.touchesBegan(touches, with: event)
     }
     
-
     @IBAction func logInButton(_ sender: UIButton) {
         if !verification() {
             alertMessage(title: "Error", message: "Login or Password is not correct!")
@@ -60,7 +59,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             nextResponder.becomeFirstResponder()
         } else {
             textField.resignFirstResponder()
-            logInButton(logInButton)
+            logInButton.sendActions(for: .touchUpInside)
         }
         
         return true
