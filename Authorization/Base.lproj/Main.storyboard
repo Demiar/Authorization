@@ -87,6 +87,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="logInButton" destination="pFI-AW-2fX" id="uDh-if-V2m"/>
                         <outlet property="loginTextField" destination="nGc-W0-MhF" id="yRM-TM-4pO"/>
                         <outlet property="passTextField" destination="mJ5-qu-dFO" id="SZm-7Q-nS2"/>
                     </connections>

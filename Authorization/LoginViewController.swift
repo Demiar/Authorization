@@ -11,9 +11,12 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var loginTextField: UITextField!
     @IBOutlet weak var passTextField: UITextField!
     
+    @IBOutlet weak var logInButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         loginTextField.delegate = self
+        passTextField.delegate = self
         loginTextField.returnKeyType = UIReturnKeyType.next
         passTextField.returnKeyType = UIReturnKeyType.done
     }
@@ -50,31 +53,32 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         passTextField.text = ""
     }
     
-    func verification() -> Bool {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        let nextTag = textField.tag + 1
+            
+        if let nextResponder = textField.superview?.viewWithTag(nextTag) {
+            nextResponder.becomeFirstResponder()
+        } else {
+            textField.resignFirstResponder()
+            logInButton(logInButton)
+        }
+        
+        return true
+    }
+    
+    private func verification() -> Bool {
         if loginTextField.text == "user" && passTextField.text == "pass" {
             return true
         }
         return false
     }
     
-    func alertMessage(title: String, message: String, buttonTitle: String = "Ok") {
+    private func alertMessage(title: String, message: String, buttonTitle: String = "Ok") {
         let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
 
         alert.addAction(UIAlertAction(title: buttonTitle, style: UIAlertAction.Style.default, handler: nil))
 
         self.present(alert, animated: true, completion: nil)
-    }
-    
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        let nextTag = textField.tag + 1
-
-        if let nextResponder = textField.superview?.viewWithTag(nextTag) {
-            nextResponder.becomeFirstResponder()
-        } else {
-            textField.resignFirstResponder()
-        }
-
-        return true
     }
 }
 
