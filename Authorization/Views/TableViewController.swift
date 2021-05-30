@@ -9,21 +9,12 @@ import UIKit
 
 
 class TableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    @IBOutlet weak var tableView: UITableView!
     
-    private let dwarves = [
-        "Sleepy", "Sneezy", "Bashful", "Happy",
-        "Doc", "Grumpy", "Dopey",
-        "Thorin", "Dorin", "Nori", "Ori",
-        "Balin", "Dwalin", "Fili", "Kili",
-        "Oin", "Gloin", "Bifur", "Bofur",
-        "Bombur"
-    ]
-    let simpleTableIdentifier = "SimpleTableIdentifier"
-    
+    var hobby = [Hobby(title: "", description: "", image: "")]
+
     override func viewDidLoad() {
-        
         super.viewDidLoad()
-        
     }
     
     override func didReceiveMemoryWarning() {
@@ -35,20 +26,17 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dwarves.count
+        return hobby.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCell(withIdentifier: simpleTableIdentifier)
-        if (cell == nil) {
-            cell = UITableViewCell(
-                style: UITableViewCell.CellStyle.default,
-                reuseIdentifier: simpleTableIdentifier)
-        }
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! TableViewCell
+        cell.photo.image = UIImage(named: hobby[indexPath .row].image)
+        cell.title.text = hobby[indexPath .row].title
+        cell.textView.text = hobby[indexPath .row].description
 
-        cell?.textLabel?.text = dwarves[indexPath.row]
-        cell?.textLabel?.text = dwarves[indexPath.row]
-        return cell!
+        return cell
     }
+    
     
 }

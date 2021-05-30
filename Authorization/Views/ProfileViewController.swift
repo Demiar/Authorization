@@ -46,10 +46,10 @@ class ProfileViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let result = segue.destination as? HobbyViewController {
             result.hobby = user.hobby
-        }
-        
-        if let result = segue.destination as? ProfessionViewController {
+        } else if let result = segue.destination as? ProfessionViewController {
             result.profession = user.profession
+        } else if let result = segue.destination as? TableViewController {
+            result.hobby = user.hobby
         }
         
     }

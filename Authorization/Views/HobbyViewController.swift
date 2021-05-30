@@ -8,7 +8,7 @@
 import UIKit
 
 class HobbyViewController: UIViewController {
-    //@IBOutlet weak var hobbyTextView: UITextView!
+
     @IBOutlet weak var imageOneView: UIImageView!
     @IBOutlet weak var imageTwoView: UIImageView!
     @IBOutlet weak var titleOneLabel: UILabel!
@@ -20,7 +20,7 @@ class HobbyViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //hobbyTextView.text = hobbyText
+
         imageOneView.image = UIImage(named: hobby[0].image)
         titleOneLabel.text = hobby[0].title
         textOneView.text = hobby[0].description
