@@ -21,7 +21,10 @@ let user = User(name: "Alexey",
                               image: "lego.jpg"),
                         Hobby(title: "Гаджеты",
                               description: "В курсе всех новинкок в области компьютерной и мобильной техники.",
-                              image: "gadgets.jpg")
+                              image: "gadgets.jpg"),
+                        Hobby(title: "Компьютерные игры",
+                              description: "Любимые жанры экшн, гонки, пошаговые стратегии. Играю в свободное от работы, учёбы и семьи время, т.е. практически никогда :)",
+                              image: "games.jpg")
                 ],
                 profession: [Profession(title: "Web-developer",
                                         description: "Сайты на Битрикс",

@@ -26,6 +26,8 @@
 		8A623E5C2663E39900E24F97 /* lego.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8A623E5B2663E39900E24F97 /* lego.jpg */; };
 		8A623E642663E7D000E24F97 /* imageProfile.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A623E632663E7D000E24F97 /* imageProfile.png */; };
 		8A623E662663EE4200E24F97 /* gadgets.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8A623E652663EE4200E24F97 /* gadgets.jpg */; };
+		8A623E682664275000E24F97 /* games.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8A623E672664275000E24F97 /* games.jpg */; };
+		8A623E6A26642D0A00E24F97 /* AboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A623E6926642D0A00E24F97 /* AboutMeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		8A623E5B2663E39900E24F97 /* lego.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lego.jpg; sourceTree = "<group>"; };
 		8A623E632663E7D000E24F97 /* imageProfile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imageProfile.png; sourceTree = "<group>"; };
 		8A623E652663EE4200E24F97 /* gadgets.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gadgets.jpg; sourceTree = "<group>"; };
+		8A623E672664275000E24F97 /* games.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = games.jpg; sourceTree = "<group>"; };
+		8A623E6926642D0A00E24F97 /* AboutMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +112,7 @@
 		8A344A752662312D004719F6 /* Files */ = {
 			isa = PBXGroup;
 			children = (
+				8A623E672664275000E24F97 /* games.jpg */,
 				8A623E652663EE4200E24F97 /* gadgets.jpg */,
 				8A623E632663E7D000E24F97 /* imageProfile.png */,
 				8A623E5B2663E39900E24F97 /* lego.jpg */,
@@ -125,6 +130,7 @@
 				8A623E532663CD6200E24F97 /* HobbyViewController.swift */,
 				8A623E552663CD7300E24F97 /* ProfessionViewController.swift */,
 				8A623E572663D47700E24F97 /* TableViewController.swift */,
+				8A623E6926642D0A00E24F97 /* AboutMeViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -204,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A623E642663E7D000E24F97 /* imageProfile.png in Resources */,
+				8A623E682664275000E24F97 /* games.jpg in Resources */,
 				8A344A67265D8083004719F6 /* LaunchScreen.storyboard in Resources */,
 				8A623E5C2663E39900E24F97 /* lego.jpg in Resources */,
 				8A623E662663EE4200E24F97 /* gadgets.jpg in Resources */,
@@ -221,6 +228,7 @@
 			files = (
 				8A623E5A2663D49E00E24F97 /* TableViewCell.swift in Sources */,
 				8A623E562663CD7300E24F97 /* ProfessionViewController.swift in Sources */,
+				8A623E6A26642D0A00E24F97 /* AboutMeViewController.swift in Sources */,
 				8A344A5F265D807C004719F6 /* LoginViewController.swift in Sources */,
 				8A344A6F265D8133004719F6 /* WelcomeViewController.swift in Sources */,
 				8A344A7326622F63004719F6 /* User.swift in Sources */,
