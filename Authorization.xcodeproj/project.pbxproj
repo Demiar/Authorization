@@ -14,6 +14,18 @@
 		8A344A64265D8083004719F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A344A63265D8083004719F6 /* Assets.xcassets */; };
 		8A344A67265D8083004719F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A344A65265D8083004719F6 /* LaunchScreen.storyboard */; };
 		8A344A6F265D8133004719F6 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A344A6E265D8133004719F6 /* WelcomeViewController.swift */; };
+		8A344A7326622F63004719F6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A344A7226622F63004719F6 /* User.swift */; };
+		8A344A79266231DF004719F6 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A344A78266231DF004719F6 /* ProfileViewController.swift */; };
+		8A623E4D2663C55C00E24F97 /* Hobby.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A623E4C2663C55C00E24F97 /* Hobby.swift */; };
+		8A623E4F2663C59D00E24F97 /* Profession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A623E4E2663C59D00E24F97 /* Profession.swift */; };
+		8A623E522663C5E300E24F97 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A623E512663C5E300E24F97 /* UserData.swift */; };
+		8A623E542663CD6200E24F97 /* HobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A623E532663CD6200E24F97 /* HobbyViewController.swift */; };
+		8A623E562663CD7300E24F97 /* ProfessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A623E552663CD7300E24F97 /* ProfessionViewController.swift */; };
+		8A623E582663D47700E24F97 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A623E572663D47700E24F97 /* TableViewController.swift */; };
+		8A623E5A2663D49E00E24F97 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A623E592663D49E00E24F97 /* TableViewCell.swift */; };
+		8A623E5C2663E39900E24F97 /* lego.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8A623E5B2663E39900E24F97 /* lego.jpg */; };
+		8A623E642663E7D000E24F97 /* imageProfile.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A623E632663E7D000E24F97 /* imageProfile.png */; };
+		8A623E662663EE4200E24F97 /* gadgets.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8A623E652663EE4200E24F97 /* gadgets.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +38,18 @@
 		8A344A66265D8083004719F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A344A68265D8083004719F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A344A6E265D8133004719F6 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		8A344A7226622F63004719F6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8A344A78266231DF004719F6 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		8A623E4C2663C55C00E24F97 /* Hobby.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hobby.swift; sourceTree = "<group>"; };
+		8A623E4E2663C59D00E24F97 /* Profession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profession.swift; sourceTree = "<group>"; };
+		8A623E512663C5E300E24F97 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		8A623E532663CD6200E24F97 /* HobbyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HobbyViewController.swift; sourceTree = "<group>"; };
+		8A623E552663CD7300E24F97 /* ProfessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionViewController.swift; sourceTree = "<group>"; };
+		8A623E572663D47700E24F97 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		8A623E592663D49E00E24F97 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		8A623E5B2663E39900E24F97 /* lego.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lego.jpg; sourceTree = "<group>"; };
+		8A623E632663E7D000E24F97 /* imageProfile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imageProfile.png; sourceTree = "<group>"; };
+		8A623E652663EE4200E24F97 /* gadgets.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gadgets.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +82,68 @@
 		8A344A59265D807C004719F6 /* Authorization */ = {
 			isa = PBXGroup;
 			children = (
+				8A623E502663C5CF00E24F97 /* Data */,
+				8A344A7726623156004719F6 /* Storyboards */,
+				8A344A7626623134004719F6 /* Views */,
+				8A344A752662312D004719F6 /* Files */,
+				8A344A742662311F004719F6 /* Models */,
 				8A344A5A265D807C004719F6 /* AppDelegate.swift */,
 				8A344A5C265D807C004719F6 /* SceneDelegate.swift */,
-				8A344A5E265D807C004719F6 /* LoginViewController.swift */,
-				8A344A6E265D8133004719F6 /* WelcomeViewController.swift */,
-				8A344A60265D807C004719F6 /* Main.storyboard */,
-				8A344A63265D8083004719F6 /* Assets.xcassets */,
-				8A344A65265D8083004719F6 /* LaunchScreen.storyboard */,
 				8A344A68265D8083004719F6 /* Info.plist */,
 			);
 			path = Authorization;
+			sourceTree = "<group>";
+		};
+		8A344A742662311F004719F6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8A344A7226622F63004719F6 /* User.swift */,
+				8A623E4C2663C55C00E24F97 /* Hobby.swift */,
+				8A623E4E2663C59D00E24F97 /* Profession.swift */,
+				8A623E592663D49E00E24F97 /* TableViewCell.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8A344A752662312D004719F6 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				8A623E652663EE4200E24F97 /* gadgets.jpg */,
+				8A623E632663E7D000E24F97 /* imageProfile.png */,
+				8A623E5B2663E39900E24F97 /* lego.jpg */,
+				8A344A63265D8083004719F6 /* Assets.xcassets */,
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
+		8A344A7626623134004719F6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8A344A5E265D807C004719F6 /* LoginViewController.swift */,
+				8A344A6E265D8133004719F6 /* WelcomeViewController.swift */,
+				8A344A78266231DF004719F6 /* ProfileViewController.swift */,
+				8A623E532663CD6200E24F97 /* HobbyViewController.swift */,
+				8A623E552663CD7300E24F97 /* ProfessionViewController.swift */,
+				8A623E572663D47700E24F97 /* TableViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8A344A7726623156004719F6 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8A344A65265D8083004719F6 /* LaunchScreen.storyboard */,
+				8A344A60265D807C004719F6 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		8A623E502663C5CF00E24F97 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				8A623E512663C5E300E24F97 /* UserData.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +203,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A623E642663E7D000E24F97 /* imageProfile.png in Resources */,
 				8A344A67265D8083004719F6 /* LaunchScreen.storyboard in Resources */,
+				8A623E5C2663E39900E24F97 /* lego.jpg in Resources */,
+				8A623E662663EE4200E24F97 /* gadgets.jpg in Resources */,
 				8A344A64265D8083004719F6 /* Assets.xcassets in Resources */,
 				8A344A62265D807C004719F6 /* Main.storyboard in Resources */,
 			);
@@ -140,9 +219,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A623E5A2663D49E00E24F97 /* TableViewCell.swift in Sources */,
+				8A623E562663CD7300E24F97 /* ProfessionViewController.swift in Sources */,
 				8A344A5F265D807C004719F6 /* LoginViewController.swift in Sources */,
 				8A344A6F265D8133004719F6 /* WelcomeViewController.swift in Sources */,
+				8A344A7326622F63004719F6 /* User.swift in Sources */,
 				8A344A5B265D807C004719F6 /* AppDelegate.swift in Sources */,
+				8A623E522663C5E300E24F97 /* UserData.swift in Sources */,
+				8A623E4D2663C55C00E24F97 /* Hobby.swift in Sources */,
+				8A623E582663D47700E24F97 /* TableViewController.swift in Sources */,
+				8A344A79266231DF004719F6 /* ProfileViewController.swift in Sources */,
+				8A623E542663CD6200E24F97 /* HobbyViewController.swift in Sources */,
+				8A623E4F2663C59D00E24F97 /* Profession.swift in Sources */,
 				8A344A5D265D807C004719F6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -13,6 +13,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var logInButton: UIButton!
     
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         loginTextField.delegate = self
@@ -22,10 +24,17 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let result = segue.destination as? WelcomeViewController else {
-            return
+        guard let tabBarController = segue.destination as? UITabBarController else { return }
+        guard let viewControllers = tabBarController.viewControllers else { return }
+        for viewController in viewControllers {
+            if let result = viewController as? WelcomeViewController {
+                result.loginValue = "\(user.name) \(user.lastName)"
+            }
+            if let navigationVC = viewController as? UINavigationController {
+                let aboutUserVC = navigationVC.topViewController as! ProfileViewController
+                aboutUserVC.user = user
+            }
         }
-        result.loginValue = loginTextField.text ?? ""
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -40,11 +49,11 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func forgotLoginButton(_ sender: UIButton) {
-        alertMessage(title: "Forgot Login?", message: "Login is user")
+        alertMessage(title: "Forgot Login?", message: "Login is \(user.login)")
     }
     
     @IBAction func forgotPassButton(_ sender: UIButton) {
-        alertMessage(title: "Forgot Password?", message: "Password is pass")
+        alertMessage(title: "Forgot Password?", message: "Password is \(user.password)")
     }
     
     @IBAction func unwindToBack(_ unwindSegue: UIStoryboardSegue) {
@@ -66,7 +75,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     }
     
     private func verification() -> Bool {
-        if loginTextField.text == "user" && passTextField.text == "pass" {
+        if loginTextField.text == user.login && passTextField.text == user.password {
             return true
         }
         return false
