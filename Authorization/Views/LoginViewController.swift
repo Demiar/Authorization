@@ -29,10 +29,11 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         for viewController in viewControllers {
             if let result = viewController as? WelcomeViewController {
                 result.loginValue = "\(user.name) \(user.lastName)"
-            }
-            if let navigationVC = viewController as? UINavigationController {
+            } else if let navigationVC = viewController as? UINavigationController {
                 let aboutUserVC = navigationVC.topViewController as! ProfileViewController
                 aboutUserVC.user = user
+            } else if let result = viewController as? AboutMeViewController {
+                result.user = user
             }
         }
     }

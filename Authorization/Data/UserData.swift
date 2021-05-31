@@ -27,7 +27,7 @@ let user = User(name: "Alexey",
                               image: "games.jpg")
                 ],
                 profession: [Profession(title: "Web-developer",
-                                        description: "Сайты на Битрикс",
+                                        description: "Занимаюсь поддержкой сайтов на Битриксе",
                                         image: "work.jpg")
                 ]
 )
